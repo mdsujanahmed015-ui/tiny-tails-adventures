@@ -1,0 +1,14 @@
+
+name: Tiny Tails Adventures Automation
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * *'
+
+jobs:
+  automation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Start workflow
+        run: echo "Tiny Tails Adventures cloud workflow is running!"
